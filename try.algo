@@ -1,0 +1,19 @@
+ALGORITHM algorithm_name
+VAR
+    Str : STRING;
+    nbr_vowel : INTEGER := 0;
+    nbr_word : INTEGER := 0;
+    nbr_length : INTEGER := 0;
+BEGIN
+WHILE (str <> '.') DO
+ nbr_length = nbr_length+1
+SWITCH (str) DO
+    case str = " " : nbr_word= nbr_word+1
+    case str = ("a,e,i,u,o,A,E,I,U,O") : nbr_vowel = nbr_vowel+1
+    default : 
+END_SWITCH    
+END_WHILE
+    write(nbr_length);
+    write(nbr_word);
+    write(nbr_vowel);
+END
